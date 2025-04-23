@@ -14,12 +14,11 @@ export default function Typewriter() {
         setText((prev) => prev + currentPhrase[charIndex])
         setCharIndex((prev) => prev + 1)
       } else {
-        // Delay before showing next phrase
         setTimeout(() => {
           setText("")
           setCharIndex(0)
           setPhraseIndex((prev) => (prev + 1) % phrases.length)
-        }, 1000) // pause before next phrase
+        }, 1000)
       }
     }, 100)
 
@@ -27,7 +26,7 @@ export default function Typewriter() {
   }, [charIndex, phraseIndex])
 
   return (
-    <p className="mt-4 text-8xl text-scienceBlue font-bold text-justify min-h-[2.5rem]">
+    <p className="mt-4 text-4xl sm:text-5xl md:text-6xl lg:text-8xl text-scienceBlue font-bold text-center md:text-justify min-h-[1.5rem] sm:min-h-[2rem] md:min-h-[2.5rem]">
       {text}
       <span className="animate-pulse">|</span>
     </p>

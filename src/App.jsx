@@ -31,7 +31,7 @@ export default function App() {
       </section>
 
       {/* About */}
-      <section id='#about' className="flex flex-col md:flex-row items-center text-center md:text-left px-28 py-8 bg-linen ">
+      <section id='about' className="flex flex-col md:flex-row items-center text-center md:text-left px-28 py-8 bg-linen ">
         <div className="w-full md:w-1/2 flex">
           <img
             src={Networking}

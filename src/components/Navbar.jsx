@@ -5,7 +5,7 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
-    <nav className="fixed top-0 w-full bg-white shadow-sm z-50 px-4 sm:px-8 md:px-12 lg:px-20">
+    <nav className="fixed top-0 w-full bg-white shadow-8xl z-50 px-4 sm:px-8 md:px-12 lg:px-20">
       <div className="mx-auto py-4 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <img src={logoText} alt="LinkedIn" className="h-6 sm:h-8" />
